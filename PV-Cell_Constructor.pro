@@ -16,10 +16,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Builders/Builder.cpp \
+    LayerManager.cpp \
+    PVLayer.cpp \
+    Screens/FileManagerScreen.cpp \
+    Screens/InfoScreen.cpp \
+    Screens/LayerOptionsScreen.cpp \
+    Screens/PreferencesScreen.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    Builders/Builder.h \
+    LayerManager.h \
+    PVLayer.h \
+    Screens/FileManagerScreen.h \
+    Screens/InfoScreen.h \
+    Screens/LayerOptionsScreen.h \
+    Screens/PreferencesScreen.h \
     mainwindow.h
 
 FORMS += \
