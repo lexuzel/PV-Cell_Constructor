@@ -2,13 +2,16 @@
 #define LAYEROPTIONSSCREEN_H
 
 #include <vector>
-
 #include <QDialog>
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
-#include <QGridLayout>
 #include <QComboBox>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QGridLayout>
+
+#include "Screens/EnergyZoneScreen.h"
 
 struct Material;
 
@@ -20,15 +23,27 @@ public:
 
 private:
     void uploadMaterials();
+    void initLayout();
+
+private slots:
+    void updateLayout();
+    void showEnergyZoneScreen();
+    void savePattern();
+    void addLayer();
+    void editPattern();
+    void deletePattern();
 
 private:
     std::vector<Material> m_materials;
-
-    QList<QLabel*> m_labels;
+    QComboBox* m_materialsList;
     QList<QLineEdit*> m_editors;
     QList<QPushButton*> m_buttons;
-    QComboBox* m_materialsList;
 
+    QWidget* m_customWidget;
+    QWidget* m_preloadWidget;
+    QVBoxLayout* m_layout;
+
+    EnergyZoneScreen* m_energyZoneScreen;
 
 };
 

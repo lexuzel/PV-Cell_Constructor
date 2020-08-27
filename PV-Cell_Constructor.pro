@@ -19,6 +19,7 @@ SOURCES += \
     Builders/Builder.cpp \
     LayerManager.cpp \
     PVLayer.cpp \
+    Screens/EnergyZoneScreen.cpp \
     Screens/FileManagerScreen.cpp \
     Screens/InfoScreen.cpp \
     Screens/LayerOptionsScreen.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     Builders/Builder.h \
     LayerManager.h \
     PVLayer.h \
+    Screens/EnergyZoneScreen.h \
     Screens/FileManagerScreen.h \
     Screens/InfoScreen.h \
     Screens/LayerOptionsScreen.h \
@@ -37,7 +39,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    form.ui
 
 TRANSLATIONS += \
     PV-Cell_Constructor_uk_UA.ts
