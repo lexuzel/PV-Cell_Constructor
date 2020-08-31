@@ -38,9 +38,6 @@ HEADERS += \
     Screens/PreferencesScreen.h \
     mainwindow.h
 
-FORMS += \
-    form.ui
-
 TRANSLATIONS += \
     PV-Cell_Constructor_uk_UA.ts
 
