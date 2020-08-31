@@ -18,25 +18,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Builders/Builder.cpp \
     LayerManager.cpp \
-    PVLayer.cpp \
+    Tools/EnergyZoneWidget.cpp \
+    Tools/PVLayer.cpp \
     Screens/EnergyZoneScreen.cpp \
     Screens/FileManagerScreen.cpp \
     Screens/InfoScreen.cpp \
     Screens/LayerOptionsScreen.cpp \
     Screens/PreferencesScreen.cpp \
     main.cpp \
-    mainwindow.cpp
+    MainWindow.cpp
 
 HEADERS += \
     Builders/Builder.h \
     LayerManager.h \
-    PVLayer.h \
+    Tools/EnergyZoneWidget.h \
+    Tools/PVLayer.h \
     Screens/EnergyZoneScreen.h \
     Screens/FileManagerScreen.h \
     Screens/InfoScreen.h \
     Screens/LayerOptionsScreen.h \
     Screens/PreferencesScreen.h \
-    mainwindow.h
+    MainWindow.h
 
 TRANSLATIONS += \
     PV-Cell_Constructor_uk_UA.ts

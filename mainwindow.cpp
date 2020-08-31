@@ -1,7 +1,7 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 
-#include "mainwindow.h"
+#include "MainWindow.h"
 #include "ui_mainwindow.h"
 #include "LayerManager.h"
 

@@ -2,6 +2,11 @@
 #define ENERGYZONESCREEN_H
 
 #include <QDialog>
+#include <QVBoxLayout>
+#include <QLineEdit>
+#include <QButtonGroup>
+
+#include "Tools/EnergyZoneWidget.h"
 
 class EnergyZoneScreen : public QDialog
 {
@@ -9,8 +14,18 @@ class EnergyZoneScreen : public QDialog
 public:
     explicit EnergyZoneScreen(QWidget *parent = nullptr);
 
-signals:
+private slots:
+    void updateLayout();
 
+private:
+    QVBoxLayout* m_layout;
+    QWidget* m_bottomWidget;
+
+    QButtonGroup* m_buttonGroup;
+    QLineEdit* m_leftGap;
+    QLineEdit* m_rightGap;
+    EnergyZoneWidget* m_energyZoneWidget;
+    QLineEdit* m_concImpur;
 };
 
 #endif // ENERGYZONESCREEN_H
